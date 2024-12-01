@@ -41,5 +41,17 @@ data_panen = {
     }
 }
 
-nama_lokasi3=(data_panen['lokasi3']['nama_lokasi'])
-print(f"nama lokasi ke 3: {nama_lokasi3} ")
+panen_padi=[]
+panen_kedelai=[]
+
+for i,j in data_panen.items():
+    panen_padi.append(j['hasil_panen']['padi'])
+
+for i,j in data_panen.items():
+    panen_kedelai.append(j['hasil_panen']['kedelai'])
+
+total_padi=sum(panen_padi)
+total_kedelai=sum(panen_kedelai)
+
+print(f"total jumlah padi: {total_padi}")
+print(f"total jumlah kedelai: {total_kedelai}")
