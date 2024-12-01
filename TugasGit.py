@@ -41,5 +41,5 @@ data_panen = {
     }
 }
 
-jagung_lokasi2=(data_panen['lokasi2']['hasil_panen']['jagung'])
-print(f"\njumlah jagung lokasi ke 2: {jagung_lokasi2}")
+nama_lokasi3=(data_panen['lokasi3']['nama_lokasi'])
+print(f"nama lokasi ke 3: {nama_lokasi3} ")
