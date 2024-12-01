@@ -41,17 +41,17 @@ data_panen = {
     }
 }
 
-panen_padi=[]
-panen_kedelai=[]
+jumlah_padi_lokasi1=(data_panen['lokasi1']['hasil_panen']['padi'])
+jumlah_padi_lokasi2=(data_panen['lokasi2']['hasil_panen']['padi'])
+jumlah_padi_lokasi3=(data_panen['lokasi3']['hasil_panen']['padi'])
+jumlah_padi_lokasi4=(data_panen['lokasi4']['hasil_panen']['padi'])
+jumlah_padi_lokasi5=(data_panen['lokasi5']['hasil_panen']['padi'])
 
-for i,j in data_panen.items():
-    panen_padi.append(j['hasil_panen']['padi'])
+jumlah_kedelai_lokasi1=(data_panen['lokasi1']['hasil_panen']['kedelai'])
+jumlah_kedelai_lokasi2=(data_panen['lokasi2']['hasil_panen']['kedelai'])
+jumlah_kedelai_lokasi3=(data_panen['lokasi3']['hasil_panen']['kedelai'])
+jumlah_kedelai_lokasi4=(data_panen['lokasi4']['hasil_panen']['kedelai'])
+jumlah_kedelai_lokasi5=(data_panen['lokasi5']['hasil_panen']['kedelai'])
 
-for i,j in data_panen.items():
-    panen_kedelai.append(j['hasil_panen']['kedelai'])
-
-total_padi=sum(panen_padi)
-total_kedelai=sum(panen_kedelai)
-
-print(f"total jumlah padi: {total_padi}")
-print(f"total jumlah kedelai: {total_kedelai}")
+print(f"jumlah padi: \n{jumlah_padi_lokasi1} \n{jumlah_padi_lokasi2} \n{jumlah_padi_lokasi3} \n{jumlah_padi_lokasi4} \n{jumlah_padi_lokasi5}")
+print(f"\njumlah kedelai: \n{jumlah_kedelai_lokasi1} \n{jumlah_kedelai_lokasi2} \n{jumlah_kedelai_lokasi3} \n{jumlah_kedelai_lokasi4} \n{jumlah_kedelai_lokasi5}")
