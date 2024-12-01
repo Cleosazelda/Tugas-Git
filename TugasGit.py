@@ -47,5 +47,7 @@ for i,j in data_panen.items():
     
     if data_padi > 1300 or data_jagung > 800:
         print(f"{i} memerlukan perhatian khusus")
+        print(f"==================================")
     else:
         print(f"{i} dalam kondisi baik")
+        print(f"==================================")
