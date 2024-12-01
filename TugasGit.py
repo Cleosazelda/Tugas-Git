@@ -41,7 +41,5 @@ data_panen = {
     }
 }
 
-for i,j in data_panen.items():
-    print(f"\n{i}")
-    print(f"nama lokasi: {j['nama_lokasi']}")
-    print(f"hasil panen: {j['hasil_panen']}")
+jagung_lokasi2=(data_panen['lokasi2']['hasil_panen']['jagung'])
+print(f"\njumlah jagung lokasi ke 2: {jagung_lokasi2}")
